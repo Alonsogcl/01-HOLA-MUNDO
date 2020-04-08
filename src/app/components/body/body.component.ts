@@ -1,16 +1,16 @@
-import {Component} from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-    selector: 'app-body',
-    templateUrl: './body.component.html'
+  selector: "app-body",
+  templateUrl: "./body.component.html",
 })
-
 export class BodyComponent {
+  mostrar = false; // Propiedad
 
-    mostrar = false; // Propiedad
+  public frase: any = {
+    mensaje: "Un gran poder requiere una gran responsabilidad",
+    autor: "Ben Parker",
+  };
 
-    public frase: any = {
-        mensaje: 'Un gran poder requiere una gran responsabilidad',
-        autor: 'Ben Parker'
-    };
+  personajes: string[] = ["Spiderman", "Venom", "Dr. Octopus"];
 }
